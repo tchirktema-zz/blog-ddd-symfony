@@ -1,0 +1,42 @@
+post :
+    - postUUID : string
+    - postSlug : string
+    - postDatePost : DateTime
+    - postContent : text
+    - postStatus : string
+    - postCategories : ArrayCollection<Category>
+    - postTags : ArrayCollection<Tag>
+    - postCreatedAt : DateTime
+    - postUpdatedAt : DateTime
+    - postAuthor : User
+
+user :
+    - userUUID : string
+    - userUsername : string
+    - userPassword : string
+    - userEmail : string
+    - userRoles : Array<string>
+    - userCreatedAt : DateTime
+    - userUpdatedAt : DateTime
+    - userLastLoginAt : DateTime
+
+tag :
+    - tagUUID
+    - tagName
+    - tagSlug
+    - tagCreatedAt : DateTime
+    - tagUpdatedAt : DateTime
+
+category :
+    - categoryUUID : string
+    - categorySlug : string
+    - categoryName : string
+    - categoryCreatedAt : DateTime
+    - categoryUpdatedAt : DateTime
+
+comment :
+    - commentUUID : string
+    - commentContent : text
+    - commentAuthor : User
+    - commentStatus : string
+    - commentCreatedAt : DateTime
